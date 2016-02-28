@@ -11,15 +11,26 @@
 </head>
 <body>
 <header id="main_navigation" class="clearfix">
-	<a href="#" class="name">Rahil Ansari</a>
+	<%= link_to "Rahil Ansari", root_path, class:"name" %> 
 		<nav>
-			<a href="articles.html">Articles</a>
+			<%= link_to "Articles", posts_path %>
 			<a href="projects.html">Projects</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 </header><!-- /header -->
 
 <%= yield %>
+
+
+<footer id="main_footer">
+<p class="copyright">&copy;2016 Rahil Ansari</p>
+<nav>
+	<a href="http://instagram.com/rahilansari261" target="_blank"><i class="fa fa-instagram"></i></a>
+	<a href="http://medium.com/@rahilansari261" target="_blank"><i class="fa fa-medium"></i></a>
+	<a href="http://github.com/ansarirahilJP" target="_blank"><i class="fa fa-github"></i></a>
+	
+</nav>
+</footer>
 
 </body>
 </html>
