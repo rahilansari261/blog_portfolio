@@ -47,6 +47,6 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
 	end
 
 	def find_post
-		@post = Post.find(params[:id])	
+		@post = Post.friendly.find(params[:id])	
 	end
 end
